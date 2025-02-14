@@ -1,4 +1,4 @@
-package ir.sharif.class_8.data_class
+package ir.sharif.class_8
 
 interface IShape {
     val vertexCount: Int
