@@ -20,6 +20,13 @@ fun main() {
         println("error")
     }
 
+    /*val result = runCatching {
+        println(getIndices(-1))
+    }
+    if(result.isFailure){
+        println("error")
+    }*/
+
     // Uncomment the line below to see a working example
     // println(getIndices(3))
     // [1, 2, 3]
