@@ -5,6 +5,7 @@ fun main() {
     createMutableList()
     createSet()
     createMap()
+    higherOrderFunctions()
 }
 
 private fun createReadOnlyList() {
@@ -92,4 +93,20 @@ private fun createMap(){
     println(juiceMenu)
 
     val juiceMenuLocked: Map<String, Int> = juiceMenu
+}
+
+private fun higherOrderFunctions() {
+    val fruits = listOf("apple", "orange", "avocado")
+
+    val fruitsStartingWithA = fruits.filter { it.startsWith("a") }
+    println(fruitsStartingWithA)
+    // ["apple", "avocado"]
+
+    val fruitsUppercase = fruits.map { fruit -> fruit.uppercase() }
+    println(fruitsUppercase)
+    // ["APPLE", "ORANGE", "AVOCADO"]
+
+    val allFruitsInOneString = fruits.reduce { acc, s -> "$acc $s" }
+    println(allFruitsInOneString)
+    // "apple orange avocado"
 }
