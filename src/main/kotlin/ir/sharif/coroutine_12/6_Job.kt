@@ -1,4 +1,4 @@
-package ir.sharif.coroutine_10
+package ir.sharif.coroutine_12
 
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -22,9 +22,15 @@ fun main() = runBlocking {
     println("Job cancelled.")
 }
 
+
+
+
+
+
+
 // If one of child coroutines in a job fails, then the parent job will fail all of its child coroutine
 
-//private fun taskThatFails() {
+// private fun taskThatFails() {
 //    throw Exception("Task failed!")
 //}
 //
